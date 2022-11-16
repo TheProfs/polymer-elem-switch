@@ -1,0 +1,50 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+
+<link rel="import" href="vonage-element.html">
+<link rel="import" href="twilio-element.html">
+
+<dom-module id="parent-element">
+  <template>
+    <style>
+      :host {
+        display: block;
+        padding:  12px;
+        border-radius: 8px;
+        border: 1px solid #333;
+      }
+
+      vonage-element,
+      twilio-element {
+        padding:  10px;
+        border-radius: 8px;
+        border: 1px solid #999;
+        margin: 12px 0;
+      }
+    </style>
+
+    <h2>Parent</h2>
+
+    <vonage-element></vonage-element>
+    <twilio-element></twilio-element>
+  </template>
+
+  <script>
+    'use strict'
+
+    Polymer({
+
+      is: 'parent-element',
+
+      properties: {
+        useTwilioElement: {
+          type: Boolean,
+          value: false
+        }
+      },
+
+      attached: function() {
+        window.parentElement = this
+      }
+    })
+  </script>
+</dom-module>

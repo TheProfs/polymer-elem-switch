@@ -1,0 +1,28 @@
+<dom-module id="vonage-element">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    <h3>Vonage</h3>
+  </template>
+
+  <script>
+    'use strict'
+
+    Polymer({
+
+      is: 'vonage-element',
+
+      properties: {
+
+      },
+
+      attached: function() {
+        window.vonageElement = this
+      }
+    })
+  </script>
+</dom-module>

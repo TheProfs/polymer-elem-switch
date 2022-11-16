@@ -1,0 +1,28 @@
+<dom-module id="twilio-element">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    <h3>Twilio</h3>
+  </template>
+
+  <script>
+    'use strict'
+
+    Polymer({
+
+      is: 'twilio-element',
+
+      properties: {
+
+      },
+
+      attached: function() {
+        window.twilioElement = this
+      }
+    })
+  </script>
+</dom-module>

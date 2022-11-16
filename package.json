@@ -1,0 +1,31 @@
+{
+  "name": "polymer-elem-switch",
+  "version": "0.1.0",
+  "description": "Experiments on switching Polymer 1.x elements on runtime",
+  "main": "server/app.js",
+  "scripts": {
+    "start-dev": "node server/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheProfs/polymer-elem-switch.git"
+  },
+  "keywords": [
+    "polymer",
+    "element",
+    "switch",
+    "experiment"
+  ],
+  "author": "@TheProfs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheProfs/polymer-elem-switch/issues"
+  },
+  "homepage": "https://github.com/TheProfs/polymer-elem-switch#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "https": "^1.0.0"
+  }
+}

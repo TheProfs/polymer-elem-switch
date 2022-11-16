@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>Polymer Element switch demo</title>
+
+    <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="icon" href="data:,">
+    <link rel="import" href="/ui/parent-element.html">
+
+    <style>
+      html,
+      body {
+        font-family: sans-serif;
+      }
+
+      .demo-container {
+        max-width: 540px;
+        margin: 20px auto;
+      }
+    </style>
+
+    <script>
+      // Force HTTPS://
+      if (!location.protocol.includes('https'))
+        location.protocol = 'https:'
+    </script>
+  </head>
+  <body>
+    <div class="demo-container">
+      <template is="dom-bind">
+        <parent-element></parent-element>
+      </template>
+    </div>
+  </body>
+</html>
