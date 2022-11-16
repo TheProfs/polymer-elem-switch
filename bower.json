@@ -1,7 +1,7 @@
 {
-  "name": "paper-calls",
-  "description": "A/V calls using Twilio SDK",
-  "main": "paper-calls.html",
+  "name": "polymer-elem-switch",
+  "description": "Experiments on switching Polymer 1.x elements on runtime",
+  "main": "ui/parent-element.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0",
     "paper-button": "PolymerElements/paper-button#1.0.15",
