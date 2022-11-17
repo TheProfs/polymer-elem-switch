@@ -24,8 +24,15 @@
 
     <h2>Parent</h2>
 
-    <vonage-element></vonage-element>
-    <twilio-element></twilio-element>
+    <h3> Value: [[value]] </h3>
+
+    <template is="dom-if" if="[[!useTwilioElement]]" restamp="true">
+      <vonage-element value="{{value}}"></vonage-element>
+    </template>
+
+    <template is="dom-if" if="[[useTwilioElement]]" restamp="true">
+      <twilio-element value="{{value}}"></twilio-element>
+    </template>
   </template>
 
   <script>
@@ -38,7 +45,11 @@
       properties: {
         useTwilioElement: {
           type: Boolean,
-          value: false
+          value: true
+        },
+
+        value: {
+          notify: true
         }
       },
 
