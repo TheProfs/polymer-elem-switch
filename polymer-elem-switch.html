@@ -1,9 +1,9 @@
 <link rel="import" href="/bower_components/polymer/polymer.html">
 
-<link rel="import" href="vonage-element.html">
-<link rel="import" href="twilio-element.html">
+<link rel="import" href="child-elements/vonage-element.html">
+<link rel="import" href="child-elements/twilio-element.html">
 
-<dom-module id="parent-element">
+<dom-module id="polymer-elem-switch">
   <template>
     <style>
       :host {
@@ -33,7 +33,7 @@
 
     Polymer({
 
-      is: 'parent-element',
+      is: 'polymer-elem-switch',
 
       properties: {
         useTwilioElement: {

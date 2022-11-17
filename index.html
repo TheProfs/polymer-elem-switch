@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-    <title>Element switch demo</title>
+    <title>polymer-elem-switch demo</title>
 
     <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
 
     <link rel="icon" href="data:,">
-    <link rel="import" href="/ui/parent-element.html">
+    <link rel="import" href="polymer-elem-switch.html">
 
     <style>
       html,
@@ -22,17 +22,11 @@
         margin: 20px auto;
       }
     </style>
-
-    <script>
-      // Force HTTPS://
-      if (!location.protocol.includes('https'))
-        location.protocol = 'https:'
-    </script>
   </head>
   <body>
     <div class="demo-container">
       <template is="dom-bind">
-        <parent-element></parent-element>
+        <polymer-elem-switch></polymer-elem-switch>
       </template>
     </div>
   </body>

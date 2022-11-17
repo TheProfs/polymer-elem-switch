@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>polymer-elem-switch test</title>
+
+    <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="/bower_components/web-component-tester/browser.js"></script>
+
+    <link rel="import" href="../polymer-elem-switch.html">
+  </head>
+  <body>
+    <test-fixture id="basic">
+      <template>
+        <polymer-elem-switch></polymer-elem-switch>
+      </template>
+    </test-fixture>
+
+    <script>
+      chai.should()
+
+      let element
+
+      beforeEach(() => {
+        element = fixture('basic')
+      })
+
+      describe('Element instantiation', () => {
+        it('instantiating the element works', () => {
+          assert.equal(element.is, 'polymer-elem-switch')
+        })
+      })
+    </script>
+  </body>
+</html>
